@@ -3,7 +3,7 @@ Gabriel Chrisoberryl Guevara Kaawoan 1203230041 IF 03-03
 
 Latihan Praktikum Algoritma Struktur Data - Array, Pointer, dan Fungsi
 
-Soal No. 1 Source Code : 
+**Soal No. 1 Source Code :**
 ```c
 #include <stdio.h>
 #include <stdbool.h>
@@ -64,7 +64,7 @@ int main() {
 }
 ```
 
-Penjelasan Source Code : 
+**Penjelasan Source Code :**
 
 ```c
 #include <stdio.h>
@@ -137,22 +137,18 @@ int main() {
     return 0;
 }
 ```
-Fungsi main() merupakan titik awal program yang akan dieksekusi.
++ Fungsi main() merupakan titik awal program yang akan dieksekusi.
++ Meminta pengguna untuk memasukkan jumlah kartu (n) dan nilai-nilai kartu.
++ Nilai-nilai kartu dimasukkan ke dalam array cards.
++ Memanggil fungsi bubble_sort() untuk mengurutkan kartu.
++ Mengembalikan nilai 0, menandakan bahwa program telah berakhir dengan sukses.
 
-Meminta pengguna untuk memasukkan jumlah kartu (n) dan nilai-nilai kartu.
-
-Nilai-nilai kartu dimasukkan ke dalam array cards.
-
-Memanggil fungsi bubble_sort() untuk mengurutkan kartu.
-
-Mengembalikan nilai 0, menandakan bahwa program telah berakhir dengan sukses.
-
-Hasil Run Program : 
+**Hasil Run Program :**
 
 ![Screenshot 2024-03-19 234816](https://github.com/varrylkaawoan/GabrielASD20Maret/assets/162390856/76b7795f-5a75-4a89-a130-055a4526c292)
 
 
-Soal No. 2 Source Code : 
+**Soal No. 2 Source Code :** 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
