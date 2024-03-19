@@ -5,7 +5,9 @@ Latihan Praktikum Algoritma Struktur Data - Array, Pointer, dan Fungsi
 Soal No. 1 Source Code : 
 
 #include <stdio.h>
+
 #include <stdbool.h>
+
 int value(char card) {
     if (card >= '2' && card <= '9')
         return card - '0';
