@@ -4,7 +4,7 @@ Gabriel Chrisoberryl Guevara Kaawoan 1203230041 IF 03-03
 Latihan Praktikum Algoritma Struktur Data - Array, Pointer, dan Fungsi
 
 Soal No. 1 Source Code : 
-
+```c
     #include <stdio.h>
     #include <stdbool.h>
 
@@ -63,7 +63,7 @@ Soal No. 1 Source Code :
     
         return 0;
     }
-
+```
 Penjelasan Source Code : 
 ```c
 #include <stdio.h>
