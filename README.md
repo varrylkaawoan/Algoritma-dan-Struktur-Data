@@ -293,7 +293,7 @@ int main() {
 
     return 0;
 }
-```c
+```
 Fungsi main adalah fungsi utama dari program.
 
 Pertama-tama, program mengalokasikan memori untuk papan catur menggunakan malloc.
