@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
+
+
+
 int value(char card) {
     if (card >= '2' && card <= '9')
         return card - '0';
