@@ -3,6 +3,7 @@ Gabriel Chrisoberryl Guevara Kaawoan 1203230041 Informatika 03-03
 Latihan Praktikum Algoritma Struktur Data - Array, Pointer, dan Fungsi
 
 Soal No.1 Source code : 
+
 #include <stdio.h>
 #include <stdbool.h>
 int value(char card) {
@@ -17,7 +18,6 @@ int value(char card) {
     else // Assuming 'A' represents 1
         return 1;
 }
-
 void bubble_sort(char cards[], int n) {
     int i, j, steps = 0;
     bool swapped;
@@ -60,4 +60,5 @@ int main() {
 
     return 0;
 }
+
 Hasil Output : 
