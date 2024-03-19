@@ -66,10 +66,10 @@ int main() {
 Penjelasan Source Code : 
 ```c
 #include <stdio.h>
-
 #include <stdbool.h>
 ```
 #include <stdio.h> : Library standar untuk fungsi input-output (I/O) dalam bahasa C.
+
 #include <stdbool.h> : Library standar yang menyediakan tipe data boolean dan nilai-nilainya true dan false.
 ```c
 int value(char card) {
