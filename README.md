@@ -86,7 +86,33 @@ int value(char card) {
     }
 ```
 value(char card) : Fungsi ini mengembalikan nilai numerik dari sebuah kartu. Misalnya, untuk kartu '2', nilainya adalah 2, untuk 'J' nilainya adalah 14, untuk 'Q' nilainya adalah 15, dan seterusnya. Ini membantu dalam pengurutan kartu berdasarkan nilai numeriknya.
+```c
+void bubble_sort(char cards[], int n) {
+    int i, j, steps = 0;
+    bool swapped;
+    char temp;
 
+    printf("Initial order: %s\n", cards);
+
+    for (i = 0; i < n; i++) {
+        swapped = false;
+        for (j = 0; j < n - i - 1; j++) {
+            if (value(cards[j]) > value(cards[j+1])) {
+                // Swap cards
+                temp = cards[j];
+                cards[j] = cards[j+1];
+                cards[j+1] = temp;
+                swapped = true;
+                steps++;
+                printf("Pertukaran %d: %s\n", steps, cards);
+            }
+        }
+        if (!swapped)
+            break;
+    }
+    printf("Jumlah minimal langkah pertukaran: %d\n", steps);
+}
+```
 bubble_sort(char cards[], int n) : Fungsi ini menerima array dari kartu dan jumlah kartu, dan mengurutkan kartu tersebut menggunakan algoritma Bubble Sort.
 swapped : Variabel boolean untuk menandai apakah ada pertukaran pada iterasi tertentu.
 temp : Variabel sementara untuk menukar kartu.
