@@ -65,7 +65,6 @@ int main() {
 ```
 
 **Penjelasan Source Code :**
-
 ```c
 #include <stdio.h>
 #include <stdbool.h>
