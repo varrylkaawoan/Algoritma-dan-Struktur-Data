@@ -208,14 +208,13 @@ int main() {
 }
 ```
 
-Penjelasan Source Code : 
+**Penjelasan Source Code :**
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 ```
-#include <stdio.h> : Library standar untuk fungsi input-output (I/O) dalam bahasa C.
-
-#include <stdlib.h> : Library standar yang menyediakan fungsi-fungsi untuk alokasi dan dealokasi memori dinamis.
++ **#include <stdio.h>** : Library standar untuk fungsi input-output (I/O) dalam bahasa C.
++ **#include <stdlib.h>** : Library standar yang menyediakan fungsi-fungsi untuk alokasi dan dealokasi memori dinamis.
 ```c
 // Function to mark the positions reachable by the knight
 void koboImaginaryChess(int i, int j, int size, int *chessBoard) {
@@ -233,17 +232,12 @@ void koboImaginaryChess(int i, int j, int size, int *chessBoard) {
     }
 }
 ```
-Fungsi ini bertanggung jawab untuk menandai posisi yang dapat dicapai oleh kuda (knight) pada papan catur imajiner.
-
-i dan j adalah koordinat baris dan kolom awal kuda.
-
-size adalah ukuran papan catur (8x8 pada kasus ini).
-
-*chessBoard adalah pointer ke papan catur yang direpresentasikan sebagai larik satu dimensi.
-
-moves adalah array yang berisi semua kemungkinan gerakan kuda di papan catur.
-
-Fungsi ini memeriksa setiap kemungkinan gerakan kuda dari posisi awal (i, j) dan menandai posisi yang dapat dicapai oleh kuda di papan catur.
++ Fungsi ini bertanggung jawab untuk menandai posisi yang dapat dicapai oleh kuda (knight) pada papan catur imajiner.
++ i dan j adalah koordinat baris dan kolom awal kuda.
++ size adalah ukuran papan catur (8x8 pada kasus ini).
++ *chessBoard adalah pointer ke papan catur yang direpresentasikan sebagai larik satu dimensi.
++ moves adalah array yang berisi semua kemungkinan gerakan kuda di papan catur.
++ Fungsi ini memeriksa setiap kemungkinan gerakan kuda dari posisi awal (i, j) dan menandai posisi yang dapat dicapai oleh kuda di papan catur.
 ```c
 int main() {
     // Allocate memory for chess board
@@ -284,22 +278,15 @@ int main() {
     return 0;
 }
 ```
-Fungsi main adalah fungsi utama dari program.
++ Fungsi main adalah fungsi utama dari program.
++ Pertama-tama, program mengalokasikan memori untuk papan catur menggunakan malloc.
++ Kemudian, inisialisasi semua elemen papan catur dengan 0.
++ Pengguna diminta untuk memasukkan posisi awal kuda.
++ Fungsi koboImaginaryChess dipanggil untuk menandai posisi yang dapat dicapai oleh kuda.
++ Setelah menandai posisi yang dapat dicapai, posisi awal kuda ditetapkan kembali ke 0.
++ Papan catur dicetak di layar menggunakan dua loop bersarang.
++ Akhirnya, memori yang dialokasikan secara dinamis untuk papan catur dibebaskan menggunakan free.
 
-Pertama-tama, program mengalokasikan memori untuk papan catur menggunakan malloc.
-
-Kemudian, inisialisasi semua elemen papan catur dengan 0.
-
-Pengguna diminta untuk memasukkan posisi awal kuda.
-
-Fungsi koboImaginaryChess dipanggil untuk menandai posisi yang dapat dicapai oleh kuda.
-
-Setelah menandai posisi yang dapat dicapai, posisi awal kuda ditetapkan kembali ke 0.
-
-Papan catur dicetak di layar menggunakan dua loop bersarang.
-
-Akhirnya, memori yang dialokasikan secara dinamis untuk papan catur dibebaskan menggunakan free.
-
-Hasil Run Program :
+**Hasil Run Program :**
 
 ![Screenshot 2024-03-20 000135](https://github.com/varrylkaawoan/GabrielASD20Maret/assets/162390856/86c6c9aa-7332-4ee9-8725-2db365c30397)
