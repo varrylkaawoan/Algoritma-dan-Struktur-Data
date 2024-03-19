@@ -149,3 +149,6 @@ Nilai-nilai kartu dimasukkan ke dalam array cards.
 Memanggil fungsi bubble_sort() untuk mengurutkan kartu.
 
 Mengembalikan nilai 0, menandakan bahwa program telah berakhir dengan sukses.
+
+Hasil Run Program : 
+![Screenshot 2024-03-19 234816](https://github.com/varrylkaawoan/GabrielASD20Maret/assets/162390856/76b7795f-5a75-4a89-a130-055a4526c292)
