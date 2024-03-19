@@ -114,13 +114,38 @@ void bubble_sort(char cards[], int n) {
 }
 ```
 bubble_sort(char cards[], int n) : Fungsi ini menerima array dari kartu dan jumlah kartu, dan mengurutkan kartu tersebut menggunakan algoritma Bubble Sort.
-swapped : Variabel boolean untuk menandai apakah ada pertukaran pada iterasi tertentu.
-temp : Variabel sementara untuk menukar kartu.
-Algoritma Bubble Sort digunakan untuk membandingkan dua kartu berdekatan dan menukar posisinya jika tidak terurut. Ini diulangi hingga seluruh array terurut.
-Setiap kali ada pertukaran, jumlah langkah (steps) ditambah satu, dan hasil pengurutan setiap langkah dicetak.
 
+swapped : Variabel boolean untuk menandai apakah ada pertukaran pada iterasi tertentu.
+
+temp : Variabel sementara untuk menukar kartu.
+
+Algoritma Bubble Sort digunakan untuk membandingkan dua kartu berdekatan dan menukar posisinya jika tidak terurut. Ini diulangi hingga seluruh array terurut.
+
+Setiap kali ada pertukaran, jumlah langkah (steps) ditambah satu, dan hasil pengurutan setiap langkah dicetak.
+```c
+int main() {
+    int n, i;
+    printf("Masukkan jumlah kartu: ");
+    scanf("%d", &n);
+
+    char cards[n+1]; // +1 for '\0'
+    printf("Masukkan nilai kartu: ");
+    for (i = 0; i < n; i++) {
+        scanf(" %c", &cards[i]); // Read cards one by one
+    }
+    cards[n] = '\0'; // Null-terminate the string
+
+    bubble_sort(cards, n);
+
+    return 0;
+}
+```
 Fungsi main() merupakan titik awal program yang akan dieksekusi.
+
 Meminta pengguna untuk memasukkan jumlah kartu (n) dan nilai-nilai kartu.
+
 Nilai-nilai kartu dimasukkan ke dalam array cards.
+
 Memanggil fungsi bubble_sort() untuk mengurutkan kartu.
+
 Mengembalikan nilai 0, menandakan bahwa program telah berakhir dengan sukses.
