@@ -8,19 +8,14 @@ Soal No. 1 Source Code :
 #include <stdbool.h>
 
 int value(char card) {
-
     if (card >= '2' && card <= '9')
         return card - '0';
-        
     else if (card == 'J')
         return 14; // J memiliki nilai 14 agar berada di belakang K
-        
     else if (card == 'Q')
         return 15; // Q memiliki nilai 15 agar berada di belakang J
-        
     else if (card == 'K')
         return 16; // K memiliki nilai 16 agar berada di belakang Q
-        
     else // Assuming 'A' represents 1
         return 1;
 }
