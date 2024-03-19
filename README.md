@@ -70,9 +70,8 @@ Penjelasan Source Code :
 #include <stdio.h>
 #include <stdbool.h>
 ```
-#include <stdio.h> : Library standar untuk fungsi input-output (I/O) dalam bahasa C.
-
-#include <stdbool.h> : Library standar yang menyediakan tipe data boolean dan nilai-nilainya true dan false.
++ **#include <stdio.h>** : Library standar untuk fungsi input-output (I/O) dalam bahasa C.
++ **#include <stdbool.h>** : Library standar yang menyediakan tipe data boolean dan nilai-nilainya true dan false.
 ```c
 int value(char card) {
         if (card >= '2' && card <= '9')
@@ -87,7 +86,7 @@ int value(char card) {
             return 1;
     }
 ```
-value(char card) : Fungsi ini mengembalikan nilai numerik dari sebuah kartu. Misalnya, untuk kartu '2', nilainya adalah 2, untuk 'J' nilainya adalah 14, untuk 'Q' nilainya adalah 15, dan seterusnya. Ini membantu dalam pengurutan kartu berdasarkan nilai numeriknya.
++ **value(char card)** : Fungsi ini mengembalikan nilai numerik dari sebuah kartu. Misalnya, untuk kartu '2', nilainya adalah 2, untuk 'J' nilainya adalah 14, untuk 'Q' nilainya adalah 15, dan seterusnya. Ini membantu dalam pengurutan kartu berdasarkan nilai numeriknya.
 ```c
 void bubble_sort(char cards[], int n) {
     int i, j, steps = 0;
@@ -115,15 +114,11 @@ void bubble_sort(char cards[], int n) {
     printf("Jumlah minimal langkah pertukaran: %d\n", steps);
 }
 ```
-bubble_sort(char cards[], int n) : Fungsi ini menerima array dari kartu dan jumlah kartu, dan mengurutkan kartu tersebut menggunakan algoritma Bubble Sort.
-
-swapped : Variabel boolean untuk menandai apakah ada pertukaran pada iterasi tertentu.
-
-temp : Variabel sementara untuk menukar kartu.
-
-Algoritma Bubble Sort digunakan untuk membandingkan dua kartu berdekatan dan menukar posisinya jika tidak terurut. Ini diulangi hingga seluruh array terurut.
-
-Setiap kali ada pertukaran, jumlah langkah (steps) ditambah satu, dan hasil pengurutan setiap langkah dicetak.
++ **bubble_sort(char cards[], int n)** : Fungsi ini menerima array dari kartu dan jumlah kartu, dan mengurutkan kartu tersebut menggunakan algoritma Bubble Sort.
++ **swapped** : Variabel boolean untuk menandai apakah ada pertukaran pada iterasi tertentu.
++ **temp** : Variabel sementara untuk menukar kartu.
++ Algoritma Bubble Sort digunakan untuk membandingkan dua kartu berdekatan dan menukar posisinya jika tidak terurut. Ini diulangi hingga seluruh array terurut.
++ Setiap kali ada pertukaran, jumlah langkah (steps) ditambah satu, dan hasil pengurutan setiap langkah dicetak.
 ```c
 int main() {
     int n, i;
