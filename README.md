@@ -63,3 +63,38 @@ Soal No. 1 Source Code :
     
         return 0;
     }
+
+Penjelasan Source Code : 
+```c
+#include <stdio.h>
+#include <stdbool.h>
+```
+#include <stdio.h> : Library standar untuk fungsi input-output (I/O) dalam bahasa C.
+#include <stdbool.h> : Library standar yang menyediakan tipe data boolean dan nilai-nilainya true dan false.
+```c
+int value(char card) {
+        if (card >= '2' && card <= '9')
+            return card - '0';
+        else if (card == 'J')
+            return 14; // J memiliki nilai 14 agar berada di belakang K
+        else if (card == 'Q')
+            return 15; // Q memiliki nilai 15 agar berada di belakang J
+        else if (card == 'K')
+            return 16; // K memiliki nilai 16 agar berada di belakang Q
+        else // Assuming 'A' represents 1
+            return 1;
+    }
+```
+value(char card) : Fungsi ini mengembalikan nilai numerik dari sebuah kartu. Misalnya, untuk kartu '2', nilainya adalah 2, untuk 'J' nilainya adalah 14, untuk 'Q' nilainya adalah 15, dan seterusnya. Ini membantu dalam pengurutan kartu berdasarkan nilai numeriknya.
+
+bubble_sort(char cards[], int n) : Fungsi ini menerima array dari kartu dan jumlah kartu, dan mengurutkan kartu tersebut menggunakan algoritma Bubble Sort.
+swapped : Variabel boolean untuk menandai apakah ada pertukaran pada iterasi tertentu.
+temp : Variabel sementara untuk menukar kartu.
+Algoritma Bubble Sort digunakan untuk membandingkan dua kartu berdekatan dan menukar posisinya jika tidak terurut. Ini diulangi hingga seluruh array terurut.
+Setiap kali ada pertukaran, jumlah langkah (steps) ditambah satu, dan hasil pengurutan setiap langkah dicetak.
+
+Fungsi main() merupakan titik awal program yang akan dieksekusi.
+Meminta pengguna untuk memasukkan jumlah kartu (n) dan nilai-nilai kartu.
+Nilai-nilai kartu dimasukkan ke dalam array cards.
+Memanggil fungsi bubble_sort() untuk mengurutkan kartu.
+Mengembalikan nilai 0, menandakan bahwa program telah berakhir dengan sukses.
